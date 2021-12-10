@@ -1,0 +1,25 @@
+h1 {
+    color: red;
+}
+@media print {
+    h1 {
+        color: green;
+        page-break-before: always;
+    }
+    @page {
+        size: landscape;
+    }
+    nav {
+        display: none;
+    }
+    .footer {
+        position: relative;
+        /*  this sets the footer -20px from the top of the next header/page 
+        20px above the bottom of target page so make sure it is more negative 
+        than your footer's height. */
+        top: -20px;
+        /* notice that the top position subtracts 
+        more than the assigned height of the footer */
+        height: 10px;
+    }
+}
