@@ -1,0 +1,25 @@
+.header,
+.header-space,
+.footer,
+.footer-space {
+    display: none;
+}
+
+/* print */
+@media print {
+    .header,
+    .header-space,
+    .footer,
+    .footer-space {
+        height: 50px;
+        display: block;
+    }
+    .header {
+        position: fixed;
+        top: 0;
+    }
+    .footer {
+        position: fixed;
+        bottom: 0;
+    }
+}
