@@ -1,25 +1,16 @@
-.header,
-.header-space,
-.footer,
-.footer-space {
+.footer {
     display: none;
 }
 
 /* print */
 @media print {
     @page {
+        /* request landscape page when printing */
         size: landscape;
     }
-    .header,
-    .header-space,
-    .footer,
-    .footer-space {
-        height: 50px;
+    .footer {
+        /* enable footer when printing */
         display: block;
-    }
-    .header {
-        position: fixed;
-        top: 0;
     }
     .footer {
         position: fixed;
